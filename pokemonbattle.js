@@ -9,6 +9,7 @@ const pokemons = {
   pikachu: new Pokemon("Pikachu", 100, "electric", null, {thunderbolt: "thunderbolt", tackle: "tackle"}),
   charmander: new Pokemon("Charmander", 100, "fire", null, {ember: "ember", tackle: "tackle"}),
   squirtle: new Pokemon("Squirtle", 100, "water", null, {ember: "watergun", tackle: "tackle"}),
+  //TO DO add a bulbasuar!
 }
 
 function Pokemon(name, health, type1, type2, attacks){
@@ -89,7 +90,7 @@ function resolveAttacks(pokemon1, pokemon2, userInputLine){
   console.log(`${pokemon1.name}: ${pokemon1.health} hp ----- ${pokemon2.name}: ${pokemon2.health} hp`)
 }
 
-//This starts the program and set the pokemons
+//This starts the program and sets the pokemons
 let p1 = pokemons.pikachu
 let p2 = pokemons.squirtle
 battle(p1, p2)
